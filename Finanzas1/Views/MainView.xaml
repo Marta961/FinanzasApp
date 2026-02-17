@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Finanzas1.Views.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel Margin="12">
+
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,8">
+            <Button Content="Refresh" Command="{Binding RefreshCommand}" Margin="0,0,8,0"/>
+            <Button Content="Add" Command="{Binding AddCommand}" Margin="0,0,8,0"/>
+            <Button Content="Update" Command="{Binding UpdateCommand}" Margin="0,0,8,0"/>
+            <Button Content="Delete" Command="{Binding DeleteCommand}"/>
+        </StackPanel>
+
+        <DataGrid ItemsSource="{Binding Transactions}"
+                  SelectedItem="{Binding Selected}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat=d}" Width="*"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="2*"/>
+                <DataGridTextColumn Header="Amount" Binding="{Binding Amount}" Width="*"/>
+                <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </DockPanel>
+</UserControl>

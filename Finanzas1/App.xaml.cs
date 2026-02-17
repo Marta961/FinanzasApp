@@ -26,7 +26,7 @@ namespace Finanzas1
                 .Options;
 
             var db = new FinanceContext(options);
-            // db.Database.EnsureCreated(); // “basic” approach (migrations optional)
+            db.Database.EnsureCreated(); // “basic” approach (migrations optional)
 
             var service = new TransactionService(db);
             MainVM = new MainViewModel(service);
@@ -38,3 +38,4 @@ namespace Finanzas1
         }
     }
 }
+

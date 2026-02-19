@@ -4,10 +4,10 @@
     <DockPanel Margin="12">
 
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,8">
-            <Button Content="Refresh" Command="{Binding RefreshCommand}" Margin="0,0,8,0"/>
-            <Button Content="Add" Command="{Binding AddCommand}" Margin="0,0,8,0"/>
-            <Button Content="Update" Command="{Binding UpdateCommand}" Margin="0,0,8,0"/>
-            <Button Content="Delete" Command="{Binding DeleteCommand}"/>
+            <Button Content="Refrescar" Command="{Binding RefreshCommand}" Margin="0,0,8,0"/>
+            <Button Content="Añadir" Command="{Binding AddCommand}" Margin="0,0,8,0"/>
+            <Button Content="Actualizar" Command="{Binding UpdateCommand}" Margin="0,0,8,0"/>
+            <Button Content="Borrar" Command="{Binding DeleteCommand}"/>
         </StackPanel>
 
         <DataGrid ItemsSource="{Binding Transactions}"
@@ -24,3 +24,4 @@
 
     </DockPanel>
 </UserControl>
+

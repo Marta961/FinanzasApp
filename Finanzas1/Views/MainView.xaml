@@ -15,13 +15,14 @@
                   AutoGenerateColumns="False"
                   IsReadOnly="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat=d}" Width="*"/>
-                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="2*"/>
-                <DataGridTextColumn Header="Amount" Binding="{Binding Amount}" Width="*"/>
-                <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="*"/>
+                <DataGridTextColumn Header="Fecha" Binding="{Binding Date, StringFormat=d}" Width="*"/>
+                <DataGridTextColumn Header="Descripción" Binding="{Binding Description}" Width="2*"/>
+                <DataGridTextColumn Header="Importe" Binding="{Binding Amount}" Width="*"/>
+                <DataGridTextColumn Header="Categorías" Binding="{Binding Category}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
 
     </DockPanel>
 </UserControl>
+
 
